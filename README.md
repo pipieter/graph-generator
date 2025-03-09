@@ -2,6 +2,12 @@
 
 Generates directed graph files using on Graph500's Kronecker graph generator implementation. Graphs are saved as DIMACS graph file format.
 
+## Cloning
+
+```bash
+git clone --recursive https://github.com/pipieter/graph-generator.git
+```
+
 ## Building
 
 The binary can be built using `make`.
@@ -9,7 +15,7 @@ The binary can be built using `make`.
 ## Usage
 
 ```bash
-./graph-generator [path] [edges] (density) 
+./graph-generator [path] [edges] (density)
 ```
 
 The amount of edges needs to be a power of two. If it is not, it will be lowered to the previous power of two. Density expects a number between 0.0001 and 1.0, otherwise it will be clipped between those two values. Density has a default value of 0.25.
